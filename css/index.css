@@ -44,6 +44,17 @@ div.left {
   width: 10vw;
   background-color: rgb(77, 77, 77);
 }
+div.left ul {
+  text-align: center;
+  padding-left: 0px;
+  list-style-type: none;
+  font-size: 1.5vmin;
+}
+div.left ul li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 div.right {
   border-radius: 1rem;
   position: absolute;
@@ -52,4 +63,10 @@ div.right {
   height: calc(95vh - 1.5vw);
   width: 88.5vw;
   background-color: rgb(77, 77, 77);
+}
+div.right > div {
+  width: 100%;
+  margin-top: 1.5vh;
+  text-align: center;
+  font-size: 24px;
 }
