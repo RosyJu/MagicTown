@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 body {
   margin: 0px;
   --maxWidth: 100vw;
@@ -9,12 +12,28 @@ div.root {
   background-color: rgb(39, 39, 39);
 }
 div.banner {
+  text-align: center;
   position: absolute;
   margin: 0.5vw 0.5vw 0.5vw 0.5vw;
   width: 99vw;
   height: 5vh;
   background-color: rgb(77, 77, 77);
   border-radius: 1rem;
+}
+div.banner i {
+  line-height: 4vh;
+  font-size: 2.5vmin;
+  color: aliceblue;
+}
+div.banner img {
+  vertical-align: middle;
+  border-radius: 0.2rem;
+  width: 4vmin;
+  height: 4vmin;
+  transition: 0.5s;
+}
+div.banner img:hover {
+  rotate: 360deg;
 }
 div.left {
   border-radius: 1rem;
