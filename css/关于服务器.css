@@ -3,10 +3,6 @@ div#关于服务器 img.MagicTown {
   border-radius: 1rem;
   width: 70vw;
 }
-div#关于服务器 > span.gyfwq {
-  font-size: 24px;
-  font-weight: bold;
-}
 div#关于服务器 > div.分割线 {
   margin-top: 5px;
   width: 100%;
@@ -16,7 +12,11 @@ div#关于服务器 > div.分割线 {
 div#关于服务器 > span.ip {
   font-size: 24px;
 }
+div#关于服务器 > span.fz {
+  color: antiquewhite;
+}
 div#关于服务器 > div.服务器准则 {
+  color: rgb(190, 190, 190);
   font-size: 20px;
   width: 50%;
 }
