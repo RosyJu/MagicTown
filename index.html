@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/关于服务器.css">
   <link rel="stylesheet" type="text/css" href="css/服务器内容.css">
+  <link rel="stylesheet" type="text/css" href="css/其他指令.css">
 </head>
 <script>
   let v = "1.0.0"
@@ -41,10 +42,12 @@
           </label>
           <input type="radio" id="服务器" name="title" checked/>
           <ul>
-            <li><label for="关于服务器">关于服务器
+            <li>
+              <label for="关于服务器">关于服务器
               </label>
             </li>
-            <li><label for="服务器内容">服务器内容
+            <li>
+              <label for="服务器内容">服务器内容
               </label>
             </li>
           </ul>
@@ -56,10 +59,12 @@
           </label>
           <input type="radio" id="玩法" name="title" />
           <ul>
-            <li><label for="星露谷种植">星露谷种植
+            <li>
+              <label for="星露谷种植">星露谷种植
               </label>
             </li>
-            <li><label for="星露谷钓鱼">星露谷钓鱼
+            <li>
+              <label for="星露谷钓鱼">星露谷钓鱼
               </label>
             </li>
           </ul>
@@ -71,16 +76,32 @@
           </label>
           <input type="radio" id="服务器指令" name="title" />
           <ul>
-            <li><label for="res">res
+            <li>
+              <label for="res">res
               </label>
             </li>
-            <li><label for="plot">plot
+            <li>
+              <label for="plot">plot
               </label>
             </li>
-            <li><label for="cmi">cmi
+            <li>
+              <label for="cmi">cmi
               </label>
             </li>
-            <li><label for="其他指令">其他指令
+            <li>
+              <label for="home">home
+              </label>
+            </li>
+            <li>
+              <label for="warp">warp
+              </label>
+            </li>
+            <li>
+              <label for="pr">pr
+              </label>
+            </li>
+            <li>
+              <label for="其他指令">其他指令
               </label>
             </li>
           </ul>
@@ -202,9 +223,131 @@
         <span class="title">cmi命令</span>
       </div>
       <!-------------->
+      <input type="radio" id="home" name="body" />
+      <div id="home">
+        <span class="title">home命令</span>
+      </div>
+      <!-------------->
+      <input type="radio" id="warp" name="body" />
+      <div id="warp">
+        <span class="title">warp命令</span>
+      </div>
+      <!-------------->
+      <input type="radio" id="pr" name="body" />
+      <div id="pr">
+        <span class="title">pr命令</span>
+      </div>
+      <!-------------->
       <input type="radio" id="其他指令" name="body" />
       <div id="其他指令">
         <span class="title">其他指令</span>
+        <div>
+          <div class="command">
+            <span>指令
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>功能
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /tpa <span class="value">[玩家]</span>
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>请求传送至<span class="value">[玩家]</span>的位置</span>
+          </div>
+          <div class="command">
+            <span>
+              /tpahere <span class="value">[玩家]</span>
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>请求<span class="value">[玩家]</span>传送至你的位置
+            </span>
+          </div>
+          <div class="command">
+            <span>/back
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>返回至上一个传送点
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /login <span class="value">[密码]</span>
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>使用<span class="value">[密码]</span>进行登录
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /pay <span class="value">[玩家]</span> <span class="value">[金额]</span>
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>向<span class="value">[玩家]</span>发送<span class="value">[金额]</span>金币
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /msg <span class="value">[玩家]</span> <span class="value">[内容]</span>
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>悄悄地对<span class="value">[玩家]</span>说<span class="value">[内容]</span>
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /sellfish
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>打开出售鱼的面板
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /hat
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>将手中物品戴到头上
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /sit
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>原地坐下
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /clearentity open
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>打开全球垃圾桶
+            </span>
+          </div>
+          <div class="command">
+            <span>
+              /money <span class="value">[玩家]</span>
+            </span>
+          </div>
+          <div class="commandValue">
+            <span>查询<span class="value">[玩家]</span>金币
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
