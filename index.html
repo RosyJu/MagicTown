@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/关于服务器.css">
   <link rel="stylesheet" type="text/css" href="css/服务器内容.css">
 </head>
+<script src="Javascript/update.js"></script>
 <!--方便才用的中文,别嘲我,橘橘github链接"https://github.com/RosyJu",速速点star-->
 <body>
   <div class="root">
@@ -46,6 +47,27 @@
             </li>
             <li>
               <label for="星露谷钓鱼">星露谷钓鱼
+              </label>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="服务器指令">服务器指令
+          </label>
+          <input type="radio" id="服务器指令" name="title" />
+          <ul>
+            <li>
+              <label for="res">res
+              </label>
+            </li>
+            <li>
+              <label for="plot">plot
+              </label>
+            </li>
+            <li>
+              <label for="cmi">cmi
               </label>
             </li>
           </ul>
@@ -152,11 +174,29 @@
       <!-------------->
       <input type="radio" id="星露谷种植" name="body" />
       <div id="星露谷种植">
+        <span class="title">星露谷种植</span>
       </div>
       <!-------------->
       <input type="radio" id="星露谷钓鱼" name="body" />
       <div id="星露谷钓鱼">
+        <span class="title">星露谷钓鱼</span>
       </div>
+      <!-------------->
+      <input type="radio" id="res" name="body" />
+      <div id="res">
+        <span class="title">res命令</span>
+      </div>
+      <!-------------->
+      <input type="radio" id="plot" name="body" />
+      <div id="plot">
+        <span class="title">plot命令</span>
+      </div>
+      <!-------------->
+      <input type="radio" id="cmi" name="body" />
+      <div id="cmi">
+        <span class="title">cmi命令</span>
+      </div>
+      <!-------------->
     </div>
   </div>
 </body>
