@@ -16,10 +16,17 @@ div#关于服务器 > span.fz {
   color: antiquewhite;
 }
 div#关于服务器 > div.服务器准则 {
+  float: left;
   color: rgb(190, 190, 190);
   font-size: 20px;
-  width: 50%;
+  width: 40%;
 }
 div#关于服务器 > div.服务器准则 > ol > li {
   text-align: left;
+}
+div#关于服务器 > div.网站说明 {
+  font-size: 20px;
+  color: beige;
+  float: left;
+  width: calc(60%);
 }

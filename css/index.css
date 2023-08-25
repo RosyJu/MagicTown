@@ -78,6 +78,15 @@ div.left > ul > li {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+div.left > ul > li > input {
+  display: none;
+}
+div.left > ul > li > input + ul {
+  display: none;
+}
+div.left > ul > li > input:checked + ul {
+  display: block;
+}
 div.left > ul > li > ul {
   padding-left: 15px;
 }

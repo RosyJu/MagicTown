@@ -5,7 +5,9 @@
   <link rel="icon" href="images/MagicTownLogo.jpg">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/关于服务器.css">
+  <link rel="stylesheet" type="text/css" href="css/服务器内容.css">
 </head>
+<!--方便才用的中文,别嘲我,橘橘github链接"https://github.com/RosyJu",速速点star-->
 <body>
   <div class="root">
     <div class="banner">
@@ -17,8 +19,9 @@
     <div class="left">
       <ul>
         <li>
-          <span>服务器
-          </span>
+          <label for="服务器">服务器
+          </label>
+          <input type="radio" id="服务器" name="title" checked/>
           <ul>
             <li>
               <label for="关于服务器">关于服务器
@@ -26,6 +29,23 @@
             </li>
             <li>
               <label for="服务器内容">服务器内容
+              </label>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="玩法">玩法
+          </label>
+          <input type="radio" id="玩法" name="title" />
+          <ul>
+            <li>
+              <label for="星露谷种植">星露谷种植
+              </label>
+            </li>
+            <li>
+              <label for="星露谷钓鱼">星露谷钓鱼
               </label>
             </li>
           </ul>
@@ -54,7 +74,7 @@
               禁止连续2天及以上开多个小号卖系统商店商品(情节严重封号处理);
             </li>
             <li>
-              禁止骂架，有事先找腐竹;
+              禁止骂架,有事先找腐竹;
             </li>
             <li>
               禁止使用挂端,作弊模组或科学家;
@@ -72,15 +92,70 @@
               禁止恶意制作卡服机器,卡服物品(影响到其他玩家游玩);
             </li>
             <li>
-              禁止使用服务器bug,插件bug,客户端bug等来破坏服务器平衡性;
+              禁止利用服务器bug,插件bug,客户端bug等来破坏服务器平衡性;
             </li>
           </ol>
+        </div>
+        <div class="网站说明">
+          <span class="页面说明">----页面说明----</span>
+          <br /><br />
+          <span>页面若出现布局问题按Ctrl + F5强刷新一下</span>
+          <br />
+          <span>对网页有其他建议或问题反馈私聊Rosy_Ju(橘橘)</span>
         </div>
       </div>
       <!-------------->
       <input type="radio" id="服务器内容" name="body" />
-      <div id="关于服务器">
+      <div id="服务器内容">
         <span class="title">服务器内容</span>
+        <div class="星露谷种植">
+          <img src="images/星露谷种植.png"/>
+          <span>&nbsp;&nbsp;&nbsp;星露谷种植
+          </span>
+        </div>
+        <div class="星露谷钓鱼">
+          <img src="images/星露谷钓鱼.png"/>
+          <span>&nbsp;&nbsp;&nbsp;星露谷钓鱼
+          </span>
+        </div>
+        <div class="更多附魔">
+          <img src="images/更多附魔.png"/>
+          <span>&nbsp;&nbsp;&nbsp;更多附魔
+          </span>
+        </div>
+        <div class="成就系统">
+          <img src="images/成就系统.png"/>
+          <span>&nbsp;&nbsp;&nbsp;成就系统
+          </span>
+        </div>
+        <div class="宠物系统">
+          <img src="images/宠物系统.png"/>
+          <span>&nbsp;&nbsp;&nbsp;宠物系统
+          </span>
+        </div>
+        <div class="公会系统">
+          <img src="images/公会系统.png"/>
+          <span>&nbsp;&nbsp;&nbsp;公会系统
+          </span>
+        </div>
+        <div class="技能系统">
+          <img src="images/技能系统.png"/>
+          <span>&nbsp;&nbsp;&nbsp;技能系统
+          </span>
+        </div>
+        <div class="时装系统">
+          <img src="images/时装系统.png"/>
+          <span>&nbsp;&nbsp;&nbsp;时装系统
+          </span>
+        </div>
+      </div>
+      <!-------------->
+      <input type="radio" id="星露谷种植" name="body" />
+      <div id="星露谷种植">
+      </div>
+      <!-------------->
+      <input type="radio" id="星露谷钓鱼" name="body" />
+      <div id="星露谷钓鱼">
       </div>
     </div>
   </div>
