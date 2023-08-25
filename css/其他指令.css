@@ -23,5 +23,5 @@ div#其他指令 > div > div.command {
 }
 div#其他指令 > div > div.commandValue {
   border: 3px solid rgb(179, 179, 179);
-  width: calc(70% - 7px);
+  width: calc(70% - 8px);
 }
