@@ -7,7 +7,24 @@
   <link rel="stylesheet" type="text/css" href="css/关于服务器.css">
   <link rel="stylesheet" type="text/css" href="css/服务器内容.css">
 </head>
-<script src="Javascript/update.js"></script>
+<script>
+  let v = "1.0.0"
+  let link = document.querySelectorAll('link[rel="stylesheet"]');
+  let script = document.querySelectorAll("script[src]");
+  function update(value) {
+    let scriptLength = script.length - 1;
+    let linkLength = link.length - 1
+    while (linkLength >= 0) {
+        link[linkLength].href = link[linkLength].href + '?v=' + String(value)
+        linkLength = linkLength - 1
+    }
+    while (scriptLength >= 0) {
+        script[scriptLength].src = script[scriptLength].src + '?v=' + String(value)
+        scriptLength = scriptLength - 1
+    }
+  }
+  update(v)
+</script>
 <!--方便才用的中文,别嘲我,橘橘github链接"https://github.com/RosyJu",速速点star-->
 <body>
   <div class="root">
@@ -24,12 +41,10 @@
           </label>
           <input type="radio" id="服务器" name="title" checked/>
           <ul>
-            <li>
-              <label for="关于服务器">关于服务器
+            <li><label for="关于服务器">关于服务器
               </label>
             </li>
-            <li>
-              <label for="服务器内容">服务器内容
+            <li><label for="服务器内容">服务器内容
               </label>
             </li>
           </ul>
@@ -41,12 +56,10 @@
           </label>
           <input type="radio" id="玩法" name="title" />
           <ul>
-            <li>
-              <label for="星露谷种植">星露谷种植
+            <li><label for="星露谷种植">星露谷种植
               </label>
             </li>
-            <li>
-              <label for="星露谷钓鱼">星露谷钓鱼
+            <li><label for="星露谷钓鱼">星露谷钓鱼
               </label>
             </li>
           </ul>
@@ -58,16 +71,16 @@
           </label>
           <input type="radio" id="服务器指令" name="title" />
           <ul>
-            <li>
-              <label for="res">res
+            <li><label for="res">res
               </label>
             </li>
-            <li>
-              <label for="plot">plot
+            <li><label for="plot">plot
               </label>
             </li>
-            <li>
-              <label for="cmi">cmi
+            <li><label for="cmi">cmi
+              </label>
+            </li>
+            <li><label for="其他指令">其他指令
               </label>
             </li>
           </ul>
@@ -92,29 +105,21 @@
         <div class="服务器准则">
           <span>服务器准则(举报属实,按被举报者情节轻重奖励)</span>
           <ol>
-            <li>
-              禁止连续2天及以上开多个小号卖系统商店商品(情节严重封号处理);
+            <li>禁止连续2天及以上开多个小号卖系统商店商品(情节严重封号处理);
             </li>
-            <li>
-              禁止骂架,有事先找腐竹;
+            <li>禁止骂架,有事先找腐竹;
             </li>
-            <li>
-              禁止使用挂端,作弊模组或科学家;
+            <li>禁止使用挂端,作弊模组或科学家;
             </li>
-            <li>
-              禁止玩家间RMB交易,发现必ban(封号);
+            <li>禁止玩家间RMB交易,发现必ban(封号);
             </li>
-            <li>
-              禁止涉黄涉政言论等;
+            <li>禁止涉黄涉政言论等;
             </li>
-            <li>
-              禁止宣传其他服务器,提建议可以;
+            <li>禁止宣传其他服务器,提建议可以;
             </li>
-            <li>
-              禁止恶意制作卡服机器,卡服物品(影响到其他玩家游玩);
+            <li>禁止恶意制作卡服机器,卡服物品(影响到其他玩家游玩);
             </li>
-            <li>
-              禁止利用服务器bug,插件bug,客户端bug等来破坏服务器平衡性;
+            <li>禁止利用服务器bug,插件bug,客户端bug等来破坏服务器平衡性;
             </li>
           </ol>
         </div>
@@ -197,6 +202,10 @@
         <span class="title">cmi命令</span>
       </div>
       <!-------------->
+      <input type="radio" id="其他指令" name="body" />
+      <div id="其他指令">
+        <span class="title">其他指令</span>
+      </div>
     </div>
   </div>
 </body>
