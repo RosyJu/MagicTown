@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="page/page.css" />
   </head>
 <body>
-  <script src="page/page.js?v=0.1.0"></script>
+  <script src="page/page.js"></script>
   <div class="head">
     <span class="title">MagicTown-WiKi</span>
   </div>
@@ -83,3 +83,35 @@
   <div class="index">
   </div>
 </body>
+<script>
+  let version = "0.1.0";
+  let file = [
+    document.querySelectorAll("script[src]"),//script[src]
+    document.querySelectorAll("link[rel='stylesheet']"),//link[rel='stylesheet']
+    ];
+  let fileFunction = (f) => {
+    switch (f) {
+      case 0 :
+        let scriptLength = file[f].length - 1;
+        while (scriptLength > -1) {
+          file[f][scriptLength].src = `${file[f][scriptLength].src}?version=${version}`;
+          scriptLength--;
+        }
+        break;
+      case 1 :
+        let cssLength = file[f].length - 1;
+        while (cssLength > -1) {
+          file[f][cssLength].href = `${file[f][cssLength].href}?version=${version}`;
+          cssLength--;
+        }
+        break;
+    }
+  }
+  (function () {
+    let fileLength = file.length - 1;
+    while (fileLength > -1) {
+      fileFunction(fileLength);
+      fileLength--;
+    }
+  }())
+</script>
