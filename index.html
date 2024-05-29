@@ -3,115 +3,171 @@
   <head>
     <title>MagicTown WiKi-魔法小镇</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="page/page.css" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- 
+      Cache-Control`作用于`HTTP1.1`
+      `Pragma`作用于`HTTP1.0`
+      `Expires`作用于`proxies 
+    -->
+    <link rel="stylesheet" type="text/css" href="index/css/loading.css">
   </head>
-<body>
-  <script src="page/page.js"></script>
-  <div class="head">
-    <span class="title">MagicTown-WiKi</span>
-  </div>
-  <div class="list">
-    <ul>
-      <li>
-        <span>服务器</span>
-      </li>
-      <li>
-        <span>规则(必看)</span>
-      </li>
-      <li>
-        <span>事件</span>
-      </li>
-      <li>
-        <span>玩家地标</span>
-      </li>
-      <li>
-        <span>星露谷种植</span>
-      </li>
-      <li>
-        <span>星露谷钓鱼</span>
-      </li>
-      <li>
-        <span>粘液科技</span>
-      </li>
-      <li>
-        <span>更多附魔</span>
-      </li>
-      <li>
-        <span>副本</span>
-      </li>
-      <li>
-        <span>mcMMO</span>
-      </li>
-      <li>
-        <span>公会</span>
-      </li>
-      <li>
-        <span>领地</span>
-      </li>
-      <li>
-        <span>地皮</span>
-      </li>
-      <li>
-        <span>宠物</span>
-      </li>
-      <li>
-        <span>成就</span>
-      </li>
-      <li>
-        <span>时装</span>
-      </li>
-      <li>
-        <span>颜色</span>
-      </li>
-      <li>
-        <span>官方商城</span>
-      </li>
-      <li>
-        <span>世界</span>
-      </li>
-      <li>
-        <span>其他</span>
-      </li>
-      <li>
-        <span>赞助</span>
-      </li>
-      <li>
-        <span>常见问题解答</span>
-      </li>
-    </ul>
-  </div>
-  <div class="index">
-  </div>
-</body>
-<script>
-  let version = "0.1.0";
-  let file = [
-    document.querySelectorAll("script[src]"),//script[src]
-    document.querySelectorAll("link[rel='stylesheet']"),//link[rel='stylesheet']
-    ];
-  let fileFunction = (f) => {
-    switch (f) {
-      case 0 :
-        let scriptLength = file[f].length - 1;
-        while (scriptLength > -1) {
-          file[f][scriptLength].src = `${file[f][scriptLength].src}?version=${version}`;
-          scriptLength--;
-        }
-        break;
-      case 1 :
-        let cssLength = file[f].length - 1;
-        while (cssLength > -1) {
-          file[f][cssLength].href = `${file[f][cssLength].href}?version=${version}`;
-          cssLength--;
-        }
-        break;
-    }
-  }
-  (function () {
-    let fileLength = file.length - 1;
-    while (fileLength > -1) {
-      fileFunction(fileLength);
-      fileLength--;
-    }
-  }())
-</script>
+  <body>
+    <div class="load" loading="true">
+      <div id="loading">
+        <div class="loading loading-1"></div>
+        <div class="loading loading-2"></div>
+        <div class="loading loading-3"></div>
+        <div class="loading loading-4"></div>
+        <div class="loading loading-5"></div>
+        <div class="loading loading-6"></div>
+        <div class="loading loading-7"></div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="bodyleft">
+        <div class="top">
+          <span class="text">
+            MagicTown
+          </span>
+        </div>
+        <div class="bottom">
+          <div class="zy title">
+            <label for="zy" onclick="iframeF(this,'主页')">
+              <div class="label">
+                <span>
+                  主页
+                </span>
+              </div>
+            </label>
+          </div>
+          <div class="fwqzl title">
+            <label for="fwqzl" onclick="directory(this)">
+              <div class="label">
+                <span>
+                  服务器指令
+                </span>
+              </div>
+            </label>
+            <input type="checkbox" id="fwqzl">
+            <div class="subtitle">
+              <hr />
+              <div class="tag" onclick="subtitle(this,'res')">
+                <span>
+                  /res-领地
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'cmi')">
+                <span>
+                  /cmi-优化体验
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'plot')">
+                <span>
+                  /plot-地皮
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'hb')">
+                <span>
+                  /hb-红包
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'mailbox')">
+                <span>
+                  /mailbox-邮箱
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'market')">
+                <span>
+                  /market-全球市场
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'market')">
+                <span>
+                  /auction-拍卖
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'xconomy')">
+                <span>
+                  /xconomy-经济
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'trchat')">
+                <span>
+                  /trchat-聊天
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'wflml')">
+                <span>
+                  未分类命令
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="cjjc title">
+            <label for="cjjc" onclick="directory(this)">
+              <div class="label">
+                <span>
+                  插件教程
+                </span>
+              </div>
+            </label>
+            <input type="checkbox" id="cjjc">
+            <div class="subtitle">
+              <hr />
+              <div class="tag" onclick="subtitle(this,'xlgzz')">
+                <span>
+                  星露谷种植
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'xlgdy')">
+                <span>
+                  星露谷钓鱼
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'gdfm')">
+                <span>
+                  更多附魔
+                </span>
+              </div>
+              <div class="tag" onclick="subtitle(this,'nykj')">
+                <span>
+                  粘液科技
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="FAQcjwt title">
+            <label for="FAQcjwt" onclick="iframeF(this,'FAQ常见问题')">
+              <div class="label">
+                <span>
+                  FAQ常见问题
+                </span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="bodyright">
+        <div class="top">
+          <span>
+            主页
+          </span>
+        </div>
+        <div class="bottom">
+          <iframe src="zy/zy.html"></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="index/javascript/title.js"></script>
+<link rel="stylesheet" type="text/css" href="index/css/body.css">
+<link rel="stylesheet" type="text/css" href="index/css/bodyleft.css">
+<link rel="stylesheet" type="text/css" href="index/css/bodyright.css">
+<link rel="stylesheet" type="text/css" href="index/css/bodyleft/top.css">
+<link rel="stylesheet" type="text/css" href="index/css/bodyleft/bottom.css">
+<link rel="stylesheet" type="text/css" href="index/css/bodyright/top.css">
+<link rel="stylesheet" type="text/css" href="index/css/bodyright/bottom.css">
+<script src="index/javascript/loading.js"></script>

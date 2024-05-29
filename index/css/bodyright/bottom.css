@@ -1,0 +1,14 @@
+.bodyright .bottom {
+    margin: 8px;
+    width: calc(100% - 16px);
+    height: calc(100vh - 80px);
+    background: var(--bodybg);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.bodyright .bottom iframe {
+    width: calc(100% - 16px);
+    height: calc(100vh - 80px);
+    border: 0px;
+    margin: 0px 8px 0px 8px;
+}

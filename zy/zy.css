@@ -1,0 +1,26 @@
+body {
+    color: rgb(73, 73, 73);
+}
+#magictown {
+    width: 100%;
+    height: 174px;
+}
+#magictown img {
+    width: 292px;
+    height: 174px;
+    position: relative;
+    left: calc(50% - 146px);
+}
+hr {
+    border: 0px;
+    height: 1px;
+    width: 98%;
+    background-color: rgb(255, 255, 255);
+}
+.title-1 {
+    font-size: 24px;
+}
+.title-2 {
+    font-size: 20px;
+    padding-left: 32px;
+}

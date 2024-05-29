@@ -1,0 +1,22 @@
+body {
+    color: rgb(73, 73, 73);
+}
+span.cmd {
+    color: rgb(235, 127, 4);
+}
+span.info {
+    color: rgb(110, 141, 0);
+}
+hr {
+    border: 0px;
+    height: 1px;
+    width: 98%;
+    background-color: rgb(255, 255, 255);
+}
+.title-1 {
+    font-size: 24px;
+}
+.title-2 {
+    font-size: 20px;
+    padding-left: 32px;
+}

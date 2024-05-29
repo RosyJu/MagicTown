@@ -1,0 +1,12 @@
+.bodyright .top {
+    margin: 8px 8px 0px 8px;
+    width: calc(100% - 16px);
+    height: 56px;
+    background: var(--bodybg);
+    border-radius: 8px;
+    text-align: center;
+}
+.bodyright .top span {
+    line-height: 48px;
+    font-size: 24px;
+}
